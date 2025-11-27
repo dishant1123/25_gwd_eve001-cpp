@@ -1,0 +1,27 @@
+c languges : procedure oriented languges. 
+
+c++  : object oriented languages.
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    printf("hello");
+    getch(); // return 0 ;
+}
+
+#include<iostream>
+int main()
+{
+    std :: cout<<"hello"; 
+    std :: cout<<"ram";
+    std :: cin>>a;
+    return 0; 
+}
+
+#include<iostream>
+using namespace std; 
+int main()
+{
+    cout<<"hello";
+}
