@@ -56,7 +56,7 @@ steps :
 5. if num %sum ==0  print harshard
 
 */
-
+/*
 #include<iostream>
 using namespace std;
 int main()
@@ -78,11 +78,21 @@ int main()
     }
     return 0; 
 }
-
+*/ 
 /*
 C++ Program to Print All Disarium Numbers Between 1 and 100
 
 A number is Disarium if:
 sum of each digit raised to the power of its position = number
 Example: 175 → 1¹ + 7² + 5³ = 175
+cmath / math 
+logic : 
+int num 
+num =175 
+
+a = num /100 = 175/100 =1  ==> first digit 
+b= (num /10) %10 = 175/10 =17 %10 =7   ==> second  digit 
+c = num %10  =175 %10 = 5  ==> third digit
+
+result = pow(a,1) + pow(b,2) + pow(c,3)  
 */

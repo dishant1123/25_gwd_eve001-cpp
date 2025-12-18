@@ -33,7 +33,7 @@ int a12=90   ==> correct
 using namespace std;
 int main()
 {
-    int __a=90 ;
-    cout<<"value is  :"<<__a; 
+    int _tirh__=90 ;
+    cout<<"value is  :"<<_tirh__; 
     return 0;
 }
