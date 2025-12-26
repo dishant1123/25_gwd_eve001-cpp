@@ -134,3 +134,61 @@ City 3 (Tier 3) → HRA = 0.10 × Basic Pay
 | Above ₹15,00,001        | 30% of (Income – 15,00,000) + 1,87,500 |
 
 */
+/*
+A hotel offers two types of rooms: Studio and Apartment.
+Write a C++ program to calculate the total price of the stay for both room types.
+The price depends on:
+
+	The month of stay
+	The number of nights (up to 30)
+	Applicable discounts
+Room Prices Per Night :
+
+| Month Range          | Studio Price | Apartment Price |
+| -------------------- | ------------ | --------------- |
+| January – April      | $50 / night  | $60 / night     |
+| May – August         | $70 / night  | $80 / night     |
+| September – December | $80 / night  | $90 / night     |
+
+Discount Rules
+For Studio Rooms
+January–April
+
+	More than 3 nights → 20% discount
+	More than 7 nights → 30% discount
+
+May–August
+
+	More than 3 nights → 10% discount
+	More than 7 nights → 20% discount
+
+September–December
+
+	More than 3 nights → 5% discount
+	More than 7 nights → 10% discount
+
+For Apartment Rooms
+
+	More than 7 nights, any month → 10% discount
+
+Input:
+Month of stay (e.g., January, May, September)
+Number of nights (1–30)
+
+Output:
+
+Total studio rent after discount
+Total apartment rent after discount
+
+Example:
+
+Input:
+Month: May
+Nights: 5
+
+Output:
+Studio Rent for 5 Nights is $315
+Apartment Rent for 5 Nights is $400
+
+
+*/
