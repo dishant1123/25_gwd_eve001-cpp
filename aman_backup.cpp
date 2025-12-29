@@ -288,3 +288,20 @@ if num ==rev  ==> pelindrom
     sum = 1+24+120 =145
 
 */
+/*
+C++ Program to Print All Harshad Numbers Between 1 and 100
+
+A Harshad number is divisible by the sum of its digits.
+
+Example:
+18 → digits sum = 1 + 8 = 9
+18 % 9 == 0 → Harshad number
+*/
+
+/*
+C++ Program to Print All Disarium Numbers Between 1 and 100
+
+A number is Disarium if:
+sum of each digit raised to the power of its position = number
+Example: 175 → 1¹ + 7² + 5³ = 175
+*/
