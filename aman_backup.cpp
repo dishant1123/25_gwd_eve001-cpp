@@ -192,3 +192,99 @@ Apartment Rent for 5 Nights is $400
 
 
 */
+/*
+loop  :
+1.for:
+2. while :
+3. do while:
+*/
+
+// prime perfect amg twin reverse pelindrom strong 
+/*
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,sum=0,n; 
+    cout<<"enter the number :";
+    cin>>n; 
+
+    for(i=1; i<n; i++)// 6 6 <6 
+    {
+        if(n %i==0) // 6  %5 ==0
+        {
+            sum =sum +i; // sum =6 
+        }
+    }
+    if(n ==sum)
+    {
+        cout<<"perfect number";
+    }
+    return 0; 
+}
+*/
+
+//amg : 
+
+/*
+153 : 
+3 digit : 
+
+each digit : 1**3  5**3  3**3  = 1  125 27 ==>1+125 +27 =153 
+370 :27+343 =370    ===> 371   ==> amg 
+
+1634 : 1**4  6**4  3**4  4**4   ==>1  1296  81  256  ==>1634 
+
+*/
+/*
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    long int n,sum,temp,count=0; 
+    cout<<"enter the number :";
+    cin>>n; // 1634
+
+    temp =n;  // temp =1634 
+    while(temp > 0)  // > 0 
+    {
+        temp = temp/10;// temp =0
+        count++;  // count =4 
+    }
+    temp =n; // temp =1634 
+    sum =0 ; 
+    while(temp >0)// 0 > 0 
+    {
+        int r= temp %10 ;// r = 1 %10 =1 
+        sum = sum + pow(r,count); //sum =1634
+        temp =temp /10; // temp =0
+    }
+    if(n==sum)
+    {
+        cout<<"amg";
+    }
+    return 0;
+}
+*/ 
+
+// reverse pelindrom: 
+/*
+user =123 
+rev =0 
+while num > 0 
+r= num %10   // 1 %10 =1 
+rev = rev *10 +r  // rev = 32 *10 +1  = 321  
+num = num /10     // num =0 
+
+if num ==rev  ==> pelindrom 
+*/
+
+// strong  number  : 
+
+/*
+145 : 
+    each factorial : 1! =1  4! = 1*2*3*4 =24  5! =1*2*3*4*5 =120
+    sum = 1+24+120 =145
+
+*/
