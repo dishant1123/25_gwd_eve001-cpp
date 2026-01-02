@@ -173,4 +173,23 @@ int main()
     return 0; 
 }
 
-// 
+// hw : 
+/*
+switch  : 
+    1. bubble sort 
+    2. insertion sort
+    3. selection sort
+    4. remove duplicates 
+sparse matrix :
+
+  ==> array  count    ==> 0 
+
+  con :  if zero > (row *col /2)  ==>  sparse matrix
+             5 > 4
+  3*3 
+
+  1 2 3 
+  0 4 5  
+  0 0 9 
+
+    */
