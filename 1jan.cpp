@@ -48,7 +48,7 @@ int main()
 */
 
 // STL function  :  sort() 
-/*
+
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -66,7 +66,7 @@ int main()
     {
         cout<<a[i]<<endl;
     }
-    // sort(a,a+num); // asc to desc 
+     //sort(a,a+num); // asc to desc 
     sort(a,a+num,greater<int>());
     cout<<"after  sorting  array element is :"<<endl;
     for(i=0; i<num; i++)
@@ -76,7 +76,7 @@ int main()
     return 0;
 }
 
-*/ 
+
 
 // duplicate element remove in array  :
 
