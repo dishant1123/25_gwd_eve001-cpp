@@ -107,6 +107,7 @@ int main()
 */
 
 // with arg with return 
+/*
 #include <iostream>
 using namespace std;
 int prime(int num)
@@ -144,3 +145,25 @@ int main()
     }
     return 0; 
 }
+*/ 
+/*
+function   == >4   
+amg   : 
+
+*/
+
+/*
+ROYAL KID  BANK
+
+1. create username  and password  and also generated pin for depsoit and withdraw. 
+2.   options  :
+    1. login  ==> compulsory   also  match the user name  and password you created . 
+        condition  : if login is success then directly deposit 25000 in your account.
+    2. deposit  ==> ask to enter the  pin number  if verfiy then you depsoit the money. 
+    3. withdraw  ==> ask to enter the  pin number  if verfiy then you withdraw the money.
+        a. condition  ==> you have maintain balance  min 10000 rs. 
+    4. check balance   ==> not required for  pin  
+    5 . exit 
+3. menu driven program . ==> when user press exit then only exit the program
+
+*/
