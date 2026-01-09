@@ -265,3 +265,25 @@ each digit sum = 1+8 = 9
  num %sum ==0  ==> harshard number
  18 % 9 ==0 
 */
+#include<iostream>
+using  namespace std;
+int main()
+{
+    int  num, sum =0,temp ,r;
+    cout<<"enter the  number  : ";
+    cin>>num;  //18 
+
+    temp = num ; 
+
+    while(temp > 0 ) // 0 > 0
+    {
+        r = temp %10 ; //r =1 %10 = 1
+        sum =sum +r; // sum = 9 
+        temp = temp /10; // temp = 0 
+    }
+    if(num %sum ==0) // 18 % 9 ==0
+    {
+        cout<<"harshard number ";
+    }
+    return 0; 
+}
