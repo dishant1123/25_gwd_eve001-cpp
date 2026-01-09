@@ -187,6 +187,7 @@ each digit : 1**3  5**3  3**3  = 1  125 27 ==>1+125 +27 =153
 
 1634 : 1**4  6**4  3**4  4**4   ==>1  1296  81  256  ==>1634
 */
+/*
 #include<iostream>
 #include<cmath>
 using  namespace std;
@@ -217,3 +218,50 @@ int main()
     return 0; 
 
 }
+*/ 
+// strong  number  : 
+
+/*
+145 : 
+
+each digit : 1 =1 4 =24 5 = 120 
+sum = 1+120 +24 =145 
+*/
+/*
+#include<iostream>
+using  namespace std;
+int main()
+{
+    int num, temp , fact ,sum =0; 
+    cout<<"enter the  number  : ";
+    cin>>num; //145 
+
+    temp = num;  // temp =145 
+
+    while(temp > 0) // 0 > 0 
+    {
+        int  r = temp %10;  //r= 1  %10 =1
+        fact =1;  // 1 
+        for(int i =1; i<=r; i++)
+        {
+            fact =fact *i; // fact =1 
+        }
+        sum =sum +fact; // sum =145
+        temp =temp /10 ; //  temp = 0 
+    }
+    if(sum ==num)
+    {
+        cout<<"strong number ";
+    }
+    return 0;
+}
+*/
+
+// harshard number  : 
+/*
+ex : 18
+
+each digit sum = 1+8 = 9 
+ num %sum ==0  ==> harshard number
+ 18 % 9 ==0 
+*/
