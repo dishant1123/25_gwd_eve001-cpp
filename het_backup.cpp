@@ -265,6 +265,7 @@ each digit sum = 1+8 = 9
  num %sum ==0  ==> harshard number
  18 % 9 ==0 
 */
+/*
 #include<iostream>
 using  namespace std;
 int main()
@@ -272,9 +273,7 @@ int main()
     int  num, sum =0,temp ,r;
     cout<<"enter the  number  : ";
     cin>>num;  //18 
-
     temp = num ; 
-
     while(temp > 0 ) // 0 > 0
     {
         r = temp %10 ; //r =1 %10 = 1
@@ -284,6 +283,43 @@ int main()
     if(num %sum ==0) // 18 % 9 ==0
     {
         cout<<"harshard number ";
+    }
+    return 0; 
+}
+*/
+
+// nested loop   : 
+/*
+prime perfect amg twin  pelindrom strong 
+
+
+perfect : 6 factors : 1 2 3 6   sum = 1+2+3 = 6 
+          28 factors : 1 2 4 7 14 28 sum =28  
+*/
+#include<iostream>
+using  namespace std;
+int main()
+{
+    int start, end, i,j,sum; 
+    cout<<"enter the starting  number : "; 
+    cin>>start; 
+    cout<<"enter the ending  number : "; 
+    cin>>end;
+    
+    for(i=start; i<=end; i++) // 13  13 <=10000
+    {
+        sum =0; 
+        for(j=1; j<i; j++) // 6  6  < 12
+        {
+            if(i % j==0) // 12 % 6 ==0 
+            {
+                sum =sum +j; // sum = 16
+            } 
+        } 
+        if(sum ==i)
+        {
+            cout<<i<<" is perfect number ";
+        }
     }
     return 0; 
 }
