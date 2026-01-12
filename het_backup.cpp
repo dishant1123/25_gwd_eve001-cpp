@@ -296,6 +296,7 @@ prime perfect amg twin  pelindrom strong
 perfect : 6 factors : 1 2 3 6   sum = 1+2+3 = 6 
           28 factors : 1 2 4 7 14 28 sum =28  
 */
+/*
 #include<iostream>
 using  namespace std;
 int main()
@@ -320,6 +321,54 @@ int main()
         {
             cout<<i<<" is perfect number ";
         }
+    }
+    return 0; 
+}
+*/ 
+// pattern   : 
+
+
+/*
+1.        2.          3. 
+*          * * * * *  1 2 3 4 5
+* *        * * * *    2 3 4 5
+* * *      * * *      3 4 5
+* * * *    * *        4 5
+* * * * *  *          5 
+
+*/
+
+//1 : 
+
+// #include<iostream>
+// using  namespace std;
+// int main()
+// {
+//     int i ,j ; 
+//     for(i=1; i<=5; i++)
+//     {
+//         for(j=1; j<=i; j++)
+//         {
+//             cout<<"* ";
+//         }
+//         cout<<endl;
+//     }
+//     return 0; 
+// }
+//2 : 
+
+#include<iostream>
+using  namespace std;
+int main()
+{
+    int i ,j ; 
+    for(i=1; i<=5; i++)
+    {
+        for(j=5; j>=i; j--)
+        {
+            cout<<"* ";
+        }
+        cout<<endl;
     }
     return 0; 
 }
