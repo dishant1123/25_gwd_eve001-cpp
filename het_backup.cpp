@@ -490,6 +490,7 @@ int main()
 }
 */
 // 8 :
+/*
 #include<iostream>
 using  namespace std;
 int main()
@@ -520,6 +521,7 @@ int main()
         cout<<endl;
     }
 }
+*/
 /*
        1 
       1 2 
@@ -530,4 +532,109 @@ int main()
      1 2 3
       1 2
        1
+*/
+
+// array  : 
+/*
+update  insert  delete  remove  duplicate   == >sort 
+
+int a[5] = {1,2,3,4,5};
+index number  = 0 
+
+int  a[5] ={1,2,3}
+cout<<a[4];
+*/
+/*
+update : 
+int a[5] = {1,2,3,4,5};
+
+index : 4 
+value : 99 
+after update  : {1,2,3,4,99}
+
+*/
+/*
+#include<iostream>
+using  namespace std;
+int main()
+{
+    int a[40],num,i,value, index; 
+    cout<<"enter the size of array : ";
+    cin>>num; 
+    for(i=0;i<num; i++)
+    {
+        cin>>a[i];
+    }
+    cout<<"before update array element is :\n";
+    for(i=0;i<num; i++)
+    {
+        cout<<a[i]<<" ";  // a[5] ={1,5,2,3,4}
+    }
+    cout<<"enter the value to be update :"; 
+    cin>>value; // 99
+    cout<<"enter the index to be update :";
+    cin>>index; //3 
+
+    a[index]=value;   //a[3] =99
+    cout<<"after update array element is :\n";
+    for(i=0;i<num; i++)
+    {
+        cout<<a[i]<<" "; 
+    }
+    return 0; 
+}
+*/ 
+
+// insert : 
+/*
+int a[5] ={1,5,2,3,4}
+
+user =78 
+index =2 
+
+after insert  : {1,5,78,2,3,4}
+*/
+
+#include<iostream>
+using  namespace std;
+int main()
+{
+    int a[40],num,i,value, index; 
+    cout<<"enter the size of array : ";
+    cin>>num; 
+    for(i=0;i<num; i++)
+    {
+        cin>>a[i];
+    }
+    cout<<"before insert array element is :\n";
+    for(i=0;i<num; i++)
+    {                   //         a[0] a[1] a[2] a[3] a[4] a[5]
+        cout<<a[i]<<" ";  // a[5] ={1,    5,   2,  88     3,    4}
+    }
+    cout<<"enter the value to be insert :";
+    cin>>value;//88
+    cout<<"enter the index to be insert :";
+    cin>>index;//3
+
+    for(i=num;i>index;i--)// i=3 3 >3
+    {
+        a[i]=a[i-1];//a[4]=a[3]
+    }
+    a[index]=value;   //     a[3]=88
+    num++;
+    cout<<"after insert array element is :\n";
+    for(i=0;i<num; i++)
+    {
+        cout<<a[i]<<" ";
+    }
+    return 0;
+}
+
+// delete : 
+/*
+int a[5] ={1,5,20,3,4}
+
+user index =2 
+after delete  : {1,5,3,4}
+
 */
