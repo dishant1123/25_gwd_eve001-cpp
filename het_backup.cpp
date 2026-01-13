@@ -695,3 +695,6 @@ int main()
     }
     return 0;
 }
+
+
+// menu : 1 update 2 insert 3 delete 4 remove duplicate 5 search  
