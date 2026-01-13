@@ -594,7 +594,7 @@ index =2
 
 after insert  : {1,5,78,2,3,4}
 */
-
+/*
 #include<iostream>
 using  namespace std;
 int main()
@@ -629,6 +629,7 @@ int main()
     }
     return 0;
 }
+*/
 
 // delete : 
 /*
@@ -638,3 +639,59 @@ user index =2
 after delete  : {1,5,3,4}
 
 */
+
+/*
+search  : 
+int a[5] ={1,5,20,3,4}
+
+user =20 
+index number  of search element is  : 2 
+
+*/
+// remove duplicate element  in array  : 
+
+/*
+int  a[5] = {1,2,1,2,3}
+remove duplicate element  in array  : {1,2,3}
+*/
+#include<iostream>
+using  namespace std;
+int main()
+{
+    int a[40],num,i,value, index; 
+    cout<<"enter the size of array : ";
+    cin>>num; 
+    for(i=0;i<num; i++)
+    {
+        cin>>a[i];
+    }
+    cout<<"before remove duplicate array element is :\n";
+    for(i=0;i<num; i++)
+    {                   //         a[0] a[1] a[2] a[3] a[4] a[5]
+        cout<<a[i]<<" ";  // a[6] ={1,    2,   3,    4}
+    }
+
+    cout<<"after remove duplicate array element is :\n";
+
+    for(i=0; i<num; i++) // 1  1 <5 
+    {
+        for(int j=i+1; j<num; j++) // j=3  3   < 4 
+        {
+            if(a[i] ==a[j])  // a[1] ==a[3]  2 ==4
+            {
+                for(int  k=j; k<num-1; k++)// k=4   4 < 4 
+                {
+                    a[k] =a[k+1];  // a[3]  = a[4]
+                }
+                num--; // num =4 
+                j--; // j =1 
+            }
+        }
+    }
+    cout<<"after remove duplicate array element is :\n";
+    for(i=0;i<num; i++)
+    {
+        cout<<a[i]<<" ";  // a[6] ={1,    2,   3,    4}
+    }
+    return 0;
+}
