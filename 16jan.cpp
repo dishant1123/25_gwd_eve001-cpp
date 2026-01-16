@@ -17,7 +17,6 @@ Movie Details:
 - Timings
 - Price
 
-
  book  ticket  : 
         1. gold    : 350 
         2. silver  : 450 
