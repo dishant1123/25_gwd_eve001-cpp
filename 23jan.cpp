@@ -56,4 +56,7 @@ output  :
         name    balance
         om      1900 
         bhavya  24000   
+
+task  :3  ask user to enter the  srno  and  display specific cutomer name accno and balance. 
+
 */
