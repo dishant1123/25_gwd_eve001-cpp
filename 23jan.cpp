@@ -59,4 +59,14 @@ output  :
 
 task  :3  ask user to enter the  srno  and  display specific cutomer name accno and balance. 
 
+task :4 
+Write a C++ program to perform operations on two imaginary (complex) numbers using a structure.
+The program should:
+Ask the user to enter two imaginary numbers (real and imaginary parts).
+Display a menu with the following options:
+    1.Addition
+    2.Subtraction
+    3.Multiplication
+    4.Division
+    5.Modulus
 */
