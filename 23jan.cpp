@@ -69,4 +69,9 @@ Display a menu with the following options:
     3.Multiplication
     4.Division
     5.Modulus
-*/
+
+complex number  :  23 +8i  ,  34+ 9i  ==> 57 + 17i  
+        1. real  part : 23 
+        2. imaginary  part : 8i 
+
+    */
