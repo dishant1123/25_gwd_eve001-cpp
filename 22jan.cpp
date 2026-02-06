@@ -174,4 +174,11 @@ int main()
 id   name   seats   timings   
 101   KGF    90       9pm ,9am 
 102   RRR    30       10 am,10pm
+
+task :1   delete  
+task :2  
+    if select  101  KGF  
+        timings : 10 pm    10 am 
+            ask user to enter the  timings  10 am   ===> 
+
 */
