@@ -158,5 +158,6 @@ int main()
 }
 
 /*
-task :1 if  user  enter depsoit  or  withdraw ask to enter the  pin  if its is  verify then only you one deposit or withdraw.   
+task :1 if  user  enter depsoit  or  withdraw ask to enter the  pin  if its is  verify then only you one deposit or withdraw.
+task :2 give  3 attempt  to enter the  pin .   
 */
