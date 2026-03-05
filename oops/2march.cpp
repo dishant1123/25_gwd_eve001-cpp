@@ -56,7 +56,7 @@ int main()
 */
 
 // ex :2  protected  : 
-
+/*
 #include <iostream>
 using namespace std;
 class student 
@@ -84,5 +84,73 @@ int main()
 {   
     teacher t1; 
     t1.show();
+    return 0; 
+}
+*/
+
+// ex :3
+/*
+multi level inheritance  : 
+
+class a 
+class b : public a    ===> b ==>a 
+class c : public b    ===>  c ==> a,b 
+*/ 
+
+#include <iostream>
+using namespace std;
+class employees 
+{
+    private : 
+        int emp_id; 
+    protected :
+        string emp_name; 
+    
+    public : 
+        employees(int id , string n )
+        {
+            cout<<"employees constructor called"<<endl;
+            emp_id =id; 
+            emp_name =n;
+        }
+        void show_id()
+        {
+            cout<<"employee id is  : "<<emp_id<<endl;
+        }
+};
+class manager : public employees
+{
+    protected :
+        string department; 
+    public :
+        manager(int id, string n,string d) :employees(id,n)
+        {
+            cout<<"manager constructor called"<<endl;
+            department =d;
+        }
+};
+class director : public manager 
+{
+    private : 
+        double salary; 
+    public : 
+        director(int id,string n,string d,double s ) : manager(id,n,d)
+        {
+            cout<<"director constructor called"<<endl;
+            salary =s;
+        }
+    void display()
+    {
+        show_id(); 
+        cout<<"name is  : "<<emp_name<<endl;
+        cout<<"manager department is  : "<<department<<endl;
+        cout<<"director salary is  : "<<salary<<endl;
+    }
+};
+int main()
+{
+    director d1(101,"trisha_pink","reasearch",500000); 
+    d1.display();
+       
     return 0; 
 }
