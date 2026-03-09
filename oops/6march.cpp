@@ -1,5 +1,5 @@
 /*
-encapsulation  : data and methods are wrapped together  inside  single  unit called class and direct access to data is  restircted to class only like  : 
+encapsulation  : data and methods are wrapped together  inside  single  unit called zclass and direct access to data is  restircted to class only like  : 
 1. public 
 2. private
 3. protected
