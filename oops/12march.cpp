@@ -2,6 +2,8 @@
 menu driven  + array  + inheritance  + friend +encapsualtion  : 
 
 */
+
+/*
 #include <iostream>
 using namespace std;
 class person 
@@ -112,4 +114,137 @@ int main()
         }
     } while (choice!=4);
     return 0 ;
+}
+*/
+
+/*
+polymorphism  : many forms  
+
+1. complie time polymorphism  : same function  name  but different  parameters
+    a. function  obverloading  b. constructor  overloading c. operator overloading
+
+2. run time polymorphism  :   same  function  same parameter  ==> virtual function
+*/
+
+
+// ex : 1 complie time polymorphism : function overloading
+/*
+#include <iostream>
+using namespace std; 
+class Math 
+{
+    public :
+        int add(int a, int b)
+        {
+            return a+b;
+        } 
+        int add(int a, int b, int c)
+        {
+            return a+b+c;
+        }
+        int add(int a)
+        {
+            return a; 
+        }
+        
+};
+int  main()
+{
+    Math m;
+
+    cout<<"addition of  two numbers : "<<m.add(10,20)<<endl;
+    cout<<"addition of  thre numbers : "<<m.add(10,45,20)<<endl;
+    cout<<"only one arg pass : "<<m.add(10)<<endl;
+
+    return 0 ;
+}
+*/
+
+/*
+option a . error  b . 2 function call  c. first function call d.all 
+*/
+
+//  ex :1 run time polymorphism :  without using  virtual  function  
+/*
+#include <iostream>
+using namespace std;
+class animal
+{
+    public : 
+        void sound()
+        {
+            cout<<"animal sound \n";
+        }
+};
+class dog : public animal 
+{
+    public : 
+        void sound()
+        {
+            cout<<"dog sound \n";
+        }
+}; 
+class cat : public animal
+{
+    public : 
+        void sound()
+        {
+            cout<<"cat sound \n";
+        }
+};
+int main()
+{
+    animal *a; 
+    dog d; 
+    cat c ; 
+    
+    a=&d; 
+    a=&c; 
+   
+    a->sound(); 
+    a->sound(); 
+    return 0; 
+}
+*/
+
+// with using virtual function
+
+#include <iostream>
+using namespace std;
+class animal
+{
+    public : 
+        virtual void sound()
+        {
+            cout<<"animal sound \n";
+        }
+};
+class dog : public animal 
+{
+    public : 
+        void sound()
+        {
+            cout<<"dog sound \n";
+        }
+}; 
+class cat : public animal
+{
+    public : 
+        void sound()
+        {
+            cout<<"cat sound \n";
+        }
+};
+int main()
+{
+    animal *a; 
+    dog d; 
+    cat c ; 
+    
+    a=&d; 
+  
+    a->sound(); 
+    a=&c; 
+    a->sound(); 
+    return 0; 
 }
