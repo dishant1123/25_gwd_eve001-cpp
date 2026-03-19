@@ -80,12 +80,33 @@ int main()
 {
     Complex c1(23,8);
     Complex c2(90,10);
-
     Complex c3 = c1 + c2;
-
     c3.display(); 
-
     return 0 ; 
-
-
 }
+
+/*
+class Animal {
+public:
+virtual void speak() { cout << "..."; }
+};
+class Cat : public Animal {
+public:
+void speak() override { cout << "Meow"; }
+};
+class Dog : public Animal {
+public:
+void speak() override { cout << "Woof"; }
+};
+int main() {
+Animal* arr[] = { new Cat(), new Dog() };
+for(auto a : arr) a->speak();
+}
+
+auto  : Automatically detect the data type of this variable. 
+
+int x =10 ;    ===> x int  
+
+auto x =10 ; ==> x int  
+*/
+
