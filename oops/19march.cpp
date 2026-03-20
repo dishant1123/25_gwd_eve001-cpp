@@ -224,3 +224,9 @@ task :1 interest amt  added in to the balance.
 task :2 deposit  withdraw 
 task :3 display  ==> choice  1  ==> 
 */
+
+/*
+next  session  : 
+
+1. inventory  management : 4 oops  concepts  + friend function  
+*/
