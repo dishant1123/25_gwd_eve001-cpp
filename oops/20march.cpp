@@ -200,7 +200,6 @@ void saveorder(cart &c)
         file<<i.product->get_price()<<endl; 
     }
     file<<"total : "<<c.get_total()<<endl;
-    file<<'------------------------------\n'; 
     file.close();
 
 }
@@ -251,6 +250,62 @@ int  main()
             }while(ch!=3);
         }
     }
+    int ch ; 
+    do
+    {
+        cout<<"=======SHOP===="<<endl;
+        cout<<"1.view products"<<endl;
+        cout<<"2.search product"<<endl;
+        cout<<"3.add "<<endl;
+        cout<<"4.cart"<<endl;
+        cout<<"5.check out"<<endl;
+        cout<<"6.exit"<<endl;
+        cin>>ch;
+        
+        if (ch ==1)
+        {
+            for(auto p : products)
+            {
+                p->display();
+            }
+        }
+        else if(ch ==2)
+        {
+            string key; 
+            cout<<"enter the  key  : "; 
+            cin>>key;
+            searchproduct(products,key);
+        }
+        else if (ch ==3)
+        {
+            int id,q; 
+            cout<<"enter the id  and qty: ";
+            cin>> id >> q;
+            for(auto p : products)
+            {
+                if(p->get_id()==id)
+                {
+                    c.add_item(p,q);
+                    break;
+                }
+            }
+        }
+        else if(ch ==4)
+        {
+            c.show_items();
+        }
+        else if(ch ==5)
+        {
+            int total  = c.get_total(); 
+            cout<<"total : "<<total<<endl;
+
+            cout<<"\npayment success"<<endl;
+            saveorder(c);
+
+        }
+        
+
+    }while(ch !=6); 
     return 0;
     
 }
