@@ -1,7 +1,6 @@
 /*
 template  : template allows to write a generic function that works with different data types without rewriting the code. 
 
-
 */
 
 // ex :1 
