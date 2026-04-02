@@ -94,6 +94,7 @@ int main()
 */ 
 
 // ex :5 append mode :  exiting  file : 
+/*
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -108,7 +109,7 @@ int main()
     return 0 ; 
 
 }
-
+*/ 
 /*
 task  :1 ask user to enter the  string  and  seperate  consonant and vowel  in  cons.txt and vowel.txt 
 
@@ -117,3 +118,46 @@ input  : my name is om modi.
 cons.txt : my nm s m md.
 vowel.txt :  o m m i
 */
+
+// ex :6 
+/*
+read +  :  exiting  + write + read  
+write + :  new create + write + read + exiting  open  ==> overwrite 
+append +:  new create + write + read + exiting  open  ==> add in last . 
+
+seekg()  ==> cursor move 
+
+*/
+
+
+// ex :6  r+ : 
+/*
+ofstream  ===> read 
+ifstream  ===> write
+
+ios :: in  ==> read
+ios :: out  ==> write
+ios :: app  ==> append
+ios ::binary  ==> binary file
+ios::trunc  ==> truncate file
+*/
+#include <iostream>
+#include <fstream>
+using namespace std;
+int main()
+{
+    fstream file("yogesh.txt",ios::in | ios::out);  
+    string data; 
+
+    // while(getline(file,data))
+    // { 
+    //     cout<<"read : "<<data<<endl;
+    // }
+    // getline(file,data); // default  ==> first  line  
+    file.seekg(0,ios::beg);
+    // cout<<"read : "<<data<<endl;
+
+    file<<"bhvya paras shah."<<endl;
+    file.close();
+    return 0 ; 
+}
